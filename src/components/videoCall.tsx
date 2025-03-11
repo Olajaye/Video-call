@@ -12,8 +12,8 @@ const VideoCall = ({ roomId }: any) => {
   const username = searchParam.get("username") || "Meet to aspier"
 
   useEffect(()=>{
-    const appID = parseInt(process.env.NEXT_PUBLIC_ZEGOCLOUD_APP_ID!)
-    const serverSecret = process.env.NEXT_PUBLIC_ZEGOCLOUD_SERVER_SECRET!
+    const appID = parseInt("1029344787")
+    const serverSecret = "b1a7bf2c6d881d31750f4156a68249d6"
 
     if(!appID || !serverSecret || !containerRef){
       alert("Miss details")
